@@ -21,13 +21,13 @@ Example data file formats can be found in the ```data``` directory.
 ```
 -i <inputfile> -b <boundary_points> -n <negative_down> -v <validation> -z <z_offset> -t <max_triangle_area> -a <aspect_constraint>
 ```
-```-i``` *Input Mesh* | **Required** | GR3 Mesh File Format</br>
-```-b``` *Boundary Nodes* | **Required** | Indices of Boundary Nodes in the Input Mesh</br>
-```-n``` *Negative Down* | **Required** | Boolean, True or False if Depth Measurements are Negative </br>
-```-v``` *Validation* | **Required** | Perform Validation Test on Output</br>
-```-z``` *Z-Offset* | **Required** | The Local Vertex-Plan Distance Metric for Identifying Candidate Vertices for Elimination</br>
-```-t``` *Maximum Triangle Area* | **Required** | Limits the Size of New Triangles Inserted into the Mesh</br>
-```-a``` *Aspect Constraint* | **Required** | Removes Candidate Vertex and Associated Triangles only if the Surface Aspect Remains the Same Before and After Simplification (Experimental; Not Used In This Work)</br>
+```-i``` *Input Mesh* | **Required** | GR3 mesh file format</br>
+```-b``` *Boundary Nodes* | **Required** | Indices of boundary nodes in the input mesh </br>
+```-n``` *Negative Down* | **Required** | Boolean, True or False if depth measurements are negative </br>
+```-v``` *Validation* | **Required** | Perform validation test on output </br>
+```-z``` *Z-Offset* | **Required** | The local vertex-plane distance metric for identifying candidate vertices for elimination. Optionally, a GR3 file associated with the input mesh can be used to assign z-offset values at the node level (i.e., vertical uncertainty)</br>
+```-t``` *Maximum Triangle Area* | **Required** | Limits the size of new triangles inserted into the mesh</br>
+```-a``` *Aspect Constraint* | **Required** | Removes candidate vertex and associated triangles only if the surface aspect remains the same before and after simplification (experimental; not used in above references)</br>
 
 
 **Notes:**
