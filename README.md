@@ -17,7 +17,7 @@ You should then be able to execute the program from the command line as such:
 -i Original_Mesh.gr3 -b boundary_idx.txt -n False -v False -z 1 -t 1500 -a False
 
 # Simplifying the mesh using a dynamic (node-level) z-offset value and maximum triangle area constraint of 1,500 square meters
--i Original_Mesh.gr3 -b boundary_idx.txt -n False -v False -z uncertainty_utm_nodes.grd -t 1500 -a False
+-i Original_Mesh.gr3 -b boundary_idx.txt -n False -v False -z uncertainty_utm_nodes.gr3 -t 1500 -a False
 ```
 Example data file formats can be found in the ```data``` directory.
 
