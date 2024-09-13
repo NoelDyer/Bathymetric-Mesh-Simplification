@@ -33,11 +33,6 @@ Example data file formats can be found in the ```data``` directory.
 ```-t``` *Maximum Triangle Area* | **Required** | Limits the size of new triangles inserted into the mesh</br>
 ```-a``` *Aspect Constraint* | **Required** | Removes candidate vertex and associated triangles only if the surface aspect remains the same before and after simplification (experimental; not used in above references)</br>
 
-
-**Notes:**
-<p>A default horizontal/vertical spacing of 0.75 mm to the scale is used unless a different value is provided.</p>
-An output log file is also created during execution.
-
 ### Requirements ###
 + Triangle (https://rufat.be/triangle/)
     * Python wrapper of Triangle (http://www.cs.cmu.edu/~quake/triangle.html)
