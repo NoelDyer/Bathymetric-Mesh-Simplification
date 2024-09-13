@@ -3,6 +3,7 @@ Accurate and timely predictions from operational forecast systems are crucial fo
 
 ### Reference Paper ###
 Dyer, N., Mani, S., Moghimi, S., De Floriani, L., & Zhang, J. (In Review). Bathymetric Mesh Simplification and Modelled Coastal Ocean Tide Observations in New York Harbor. Ocean Modelling.</br>
+
 Preprint Available at SSRN: https://ssrn.com/abstract=4932300
 
 ### Installation ###
