@@ -25,18 +25,18 @@ Example data file formats can be found in the ```data``` directory.
 ```
 -i <inputfile> -b <boundary_points> -n <negative_down> -v <validation> -z <z_offset> -t <max_triangle_area> -a <aspect_constraint>
 ```
-```-i``` *Input Mesh* | **Required** | GR3 mesh file format</br>
-```-b``` *Boundary Nodes* | **Required** | Indices of boundary nodes in the input mesh </br>
-```-n``` *Negative Down* | **Required** | Boolean, provide this flag if depth measurements are negative </br>
-```-v``` *Validation* | **Required** | Provide this flag to perform validation test on output </br>
-```-z``` *Z-Offset* | **Required** | The local vertex-plane distance metric for identifying candidate vertices for elimination. Optionally, a GR3 file associated with the input mesh can be used to assign z-offset values at the node level (i.e., vertical uncertainty)</br>
-```-t``` *Maximum Triangle Area* | **Required** | Limits the size of new triangles inserted into the mesh</br>
-```-a``` *Aspect Constraint* | **Required** | Provide this flag to use an aspect constraint for simplification where the candidate vertex and associated triangles are removed only if the surface aspect remains the same before and after simplification (experimental; not used in above references)</br>
+```-i``` *Input Mesh* | **Required** | GR3 mesh file format.</br>
+```-b``` *Boundary Nodes* | **Required** | Indices of boundary nodes in the input mesh.</br>
+```-n``` *Negative Down* | **Required** | Boolean, provide this flag if depth measurements are negative.</br>
+```-v``` *Validation* | **Required** | Provide this flag to perform validation test on output.</br>
+```-z``` *Z-Offset* | **Required** | The local vertex-plane distance metric for identifying candidate vertices for elimination. Optionally, a GR3 file associated with the input mesh can be used to assign z-offset values at the node level (i.e., vertical uncertainty).</br>
+```-t``` *Maximum Triangle Area* | **Required** | Limits the size of new triangles inserted into the mesh.</br>
+```-a``` *Aspect Constraint* | **Required** | Provide this flag to use an aspect constraint for simplification where the candidate vertex and associated triangles are removed only if the surface aspect remains the same before and after simplification (experimental; not used in above references).</br>
 
 ### Requirements ###
 + Triangle (https://rufat.be/triangle/)
     * Python wrapper of Triangle (http://www.cs.cmu.edu/~quake/triangle.html)
 + Shapely >= 1.8.0
-+ Numpy >= 1.21.5
++ Numpy >= 2.0.2
 + OpenMesh >= 1.2.1
 + 3.6 <= Python < 3.9
