@@ -13,11 +13,11 @@ python setup.py install  # installs to current Python environment (including req
 ```
 You should then be able to execute the program from the command line as such:
 ```
-# Simplifying the mesh using a static (non-changing) z-offset value and maximum triangle area constraint of 1,500 square meters
-mesh_simplification -i /path/to/data/Original_Mesh.gr3 -b /path/to/data/boundary_idx.txt -n False -v False -z 1 -t 1500 -a False
+# Simplifying the mesh using a static (non-changing) z-offset value and maximum triangle area constraint of 1,500 square meters (negative down and validation flags enabled, aspect flag disabled)
+mesh_simplification -i /path/to/data/Original_Mesh.gr3 -b /path/to/data/boundary_idx.txt -n -v -z 1 -t 1500
 
-# Simplifying the mesh using a dynamic (node-level) z-offset value and maximum triangle area constraint of 1,500 square meters
-mesh_simplification -i /path/to/data/Original_Mesh.gr3 -b /path/to/data/boundary_idx.txt -n False -v False -z /path/to/data/uncertainty_utm_nodes.gr3 -t 1500 -a False
+# Simplifying the mesh using a dynamic (node-level) z-offset value and maximum triangle area constraint of 1,500 square meters (negative down and validation flags disabled, aspect flag enabled)
+mesh_simplification -i /path/to/data/Original_Mesh.gr3 -b /path/to/data/boundary_idx.txt -z /path/to/data/uncertainty_utm_nodes.gr3 -t 1500 -a
 ```
 Example data file formats can be found in the ```data``` directory.
 
