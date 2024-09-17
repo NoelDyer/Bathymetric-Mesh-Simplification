@@ -27,11 +27,11 @@ Example data file formats can be found in the ```data``` directory.
 ```
 ```-i``` *Input Mesh* | **Required** | GR3 mesh file format</br>
 ```-b``` *Boundary Nodes* | **Required** | Indices of boundary nodes in the input mesh </br>
-```-n``` *Negative Down* | **Required** | Boolean, True or False if depth measurements are negative </br>
-```-v``` *Validation* | **Required** | Perform validation test on output </br>
+```-n``` *Negative Down* | **Required** | Boolean, provide this flag if depth measurements are negative </br>
+```-v``` *Validation* | **Required** | Provide this flag to perform validation test on output </br>
 ```-z``` *Z-Offset* | **Required** | The local vertex-plane distance metric for identifying candidate vertices for elimination. Optionally, a GR3 file associated with the input mesh can be used to assign z-offset values at the node level (i.e., vertical uncertainty)</br>
 ```-t``` *Maximum Triangle Area* | **Required** | Limits the size of new triangles inserted into the mesh</br>
-```-a``` *Aspect Constraint* | **Required** | Removes candidate vertex and associated triangles only if the surface aspect remains the same before and after simplification (experimental; not used in above references)</br>
+```-a``` *Aspect Constraint* | **Required** | Provide this flag to use an aspect constraint for simplification where the candidate vertex and associated triangles are removed only if the surface aspect remains the same before and after simplification (experimental; not used in above references)</br>
 
 ### Requirements ###
 + Triangle (https://rufat.be/triangle/)
