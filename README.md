@@ -38,4 +38,5 @@ Example data file formats can be found in the ```data``` directory.
     * Python wrapper of Triangle (http://www.cs.cmu.edu/~quake/triangle.html)
 + Shapely >= 1.8.0
 + Numpy >= 1.21.5
++ OpenMesh >= 1.2.1
 + 3.6 <= Python < 3.9
