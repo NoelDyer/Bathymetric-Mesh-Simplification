@@ -30,7 +30,7 @@ Example data file formats can be found in the ```data``` directory.
 ```-n``` *Negative Down* | **Optional** | Provide this flag if depth measurements are negative and land areas positive.</br>
 ```-v``` *Validation* | **Optional** | Provide this flag to perform validation test on output.</br>
 ```-z``` *Z-Offset* | **Required** | The local vertex-plane distance metric for identifying candidate vertices for elimination. Optionally, a GR3 file associated with the input mesh can be used to assign z-offset values at the node level (i.e., vertical uncertainty).</br>
-```-t``` *Maximum Triangle Area* | **Optional** | Limits the size of new triangles inserted into the mesh.</br>
+```-t``` *Maximum Triangle Area Constraint* | **Optional** | Limits the size of new triangles inserted into the mesh.</br>
 ```-a``` *Aspect Constraint* | **Optional** | Provide this flag to use an aspect constraint for simplification where the candidate vertex and associated triangles are removed only if the surface aspect remains the same before and after simplification (experimental; not used in above references).</br>
 
 ### Requirements ###
